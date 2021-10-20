@@ -6,7 +6,7 @@
     <div class="item-pokemon__favorite">
       <i
         class="fa fa-star fa-2x favorite-icon"
-        :class="{ ' favorite-icon-selected': isSelected || isSectionFavorite }"
+        :class="{ ' favorite-icon-selected': pokemon.favorite }"
         aria-hidden="true"
         @click="selectFavorite(pokemon)"
       ></i>
@@ -14,13 +14,11 @@
   </div>
 </template>
 <script>
-import { mapGetters } from 'vuex';
+
 export default {
   name: "itempokemon",
   data() {
     return {
-      isSelected: false,
-      
     };
   },
   props: {
@@ -32,7 +30,6 @@ export default {
 
   methods: {
     selectFavorite(pokemon) {
-      this.isSelected = !this.isSelected
       this.validateNewFavorite(pokemon);
     },
 
@@ -57,13 +54,6 @@ export default {
         currentFavorites.some((pokemon) => pokemon.name == name)
       );
     },
-  },
-
-  computed:{
-    ...mapGetters({
-        isSectionFavorite: 'getSectionFavorites'
-      })
-
   }
 };
 </script>

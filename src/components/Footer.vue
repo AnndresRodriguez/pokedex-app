@@ -42,38 +42,28 @@ export default {
   },
   methods: {
     getPokemons(requestType, index) {
-
- 
-       console.log('requestType', requestType == "All");
-       console.log('requestTypeData');
-
-
       this.setActiveButton(index);
-      requestType == "All"
-        ? this.loadPokemons()
-        : this.loadFavorites()
+      requestType == "All" ? this.loadPokemons() : this.loadFavorites();
     },
 
     setActiveButton(index) {
       this.buttons.map((button) => {
         if (button.id == index) {
-            button.active = true;
-        }else{
-            button.active = false;
+          button.active = true;
+        } else {
+          button.active = false;
         }
       });
     },
 
-    loadPokemons(){
-        this.$store.dispatch("loadPokemons");
-        this.$store.dispatch("setSectionFavorites", false);
-
+    loadPokemons() {
+      this.$store.dispatch("loadCurrentPokemons");
+      this.$store.dispatch("setSectionFavorites", false);
     },
-    loadFavorites(){
-        this.$store.dispatch("loadFavorites");
-        this.$store.dispatch("setSectionFavorites", true);
-
-    }
+    loadFavorites() {
+      this.$store.dispatch("loadFavorites");
+      this.$store.dispatch("setSectionFavorites", true);
+    },
   },
 };
 </script>
