@@ -1,0 +1,41 @@
+.container-welcome {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 100%;
+  flex-direction: column;
+}
+
+.image-pokemon{
+  width: 80%;
+}
+
+.container-welcome,
+.container-image-pokemon,
+.container-image {
+  display: flex;
+}
+
+.container-welcome,
+.container-image-pokemon,
+.container-image {
+  justify-content: center;
+  align-items: center;
+}
+
+
+.container-text {
+  width: 80%;
+}
+
+.container-text, .container-button{
+  margin-top: 10%;
+}
+
+.container-text__title {
+  text-align: center;
+}
+

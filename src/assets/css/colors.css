@@ -1,0 +1,23 @@
+.bkg-primary {
+  background-color: #F22539;
+}
+
+.bkg-secondary {
+  background-color: #BFBFBF;
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #3C3C3C;
+}
+
+.text {
+  font-size: 1.7rem;
+  color: #A9A9A9;
+  line-height: 2;
+}
+
+.text-center{
+    text-align: center;
+}
+
