@@ -1,8 +1,19 @@
 <template>
   <footer>
     <div class="container-footer-buttons">
-      <button type="button" class="button m-3" :class="[button.active ? 'bkg-primary': 'bkg-secondary']" v-for="(button, index) in buttons" :key="index">
-        <i class="fa  custom-font-icon me-4" :class="[button.icon]" aria-hidden="true"></i>
+      <button
+        @click="getPokemons(button.text, index)"
+        type="button"
+        class="button m-3"
+        :class="[button.active ? 'bkg-primary' : 'bkg-secondary']"
+        v-for="(button, index) in buttons"
+        :key="index"
+      >
+        <i
+          class="fa  custom-font-icon me-4"
+          :class="[button.icon]"
+          aria-hidden="true"
+        ></i>
         {{ button.text }}
       </button>
     </div>
@@ -15,17 +26,54 @@ export default {
     return {
       buttons: [
         {
+          id: 0,
           text: "All",
           icon: "fa-th-list",
           active: true,
         },
         {
+          id: 1,
           text: "Favorites",
           icon: "fa-star",
           active: false,
         },
       ],
     };
+  },
+  methods: {
+    getPokemons(requestType, index) {
+
+ 
+       console.log('requestType', requestType == "All");
+       console.log('requestTypeData');
+
+
+      this.setActiveButton(index);
+      requestType == "All"
+        ? this.loadPokemons()
+        : this.loadFavorites()
+    },
+
+    setActiveButton(index) {
+      this.buttons.map((button) => {
+        if (button.id == index) {
+            button.active = true;
+        }else{
+            button.active = false;
+        }
+      });
+    },
+
+    loadPokemons(){
+        this.$store.dispatch("loadPokemons");
+        this.$store.dispatch("setSectionFavorites", false);
+
+    },
+    loadFavorites(){
+        this.$store.dispatch("loadFavorites");
+        this.$store.dispatch("setSectionFavorites", true);
+
+    }
   },
 };
 </script>

@@ -17,27 +17,30 @@
   justify-content: space-between;
 }
 
-.item-pokemon__name {
-   justify-content: center;
-   align-items: center;
+.item-pokemon__name,
+.item-pokemon__favorite {
+  justify-content: center;
+  align-items: center;
 }
 
 .item-pokemon__favorite {
   height: 3.5rem;
   width: 3.5rem;
-  background-color:  #F5F5F5 ;
+  background-color: #f5f5f5;
   border-radius: 50%;
-  justify-content: center;
-  align-items: center;
 }
 
-.favorite-icon{
-  color: #BFBFBF ; 
+.favorite-icon {
+  color: #bfbfbf;
 }
 
-.item-pokemon__text{
-    font-size: 2rem;
-    color: #353535;
-    font-weight: 500;
-    text-transform: capitalize;
+.favorite-icon-selected {
+  color: #eca539;
+}
+
+.item-pokemon__text {
+  font-size: 2rem;
+  color: #353535;
+  font-weight: 500;
+  text-transform: capitalize;
 }

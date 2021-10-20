@@ -3,7 +3,7 @@
     <div class="container p-5 mt-2">
       <Search />
       <template v-for="(pokemon, index) in getFilteredPokemons">
-        <Pokemon :name="pokemon.name" :key="index" />
+        <Pokemon :pokemon="pokemon" :key="index" />
       </template>
     </div>
     <Footer />
