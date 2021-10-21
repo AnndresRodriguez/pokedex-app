@@ -1,4 +1,4 @@
-.button {
+.button, .button-desktop-footer {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,5 +16,14 @@
   transition: color 0.15s;
   font-weight: 500;
   height: 4rem;
+}
+
+.button{
   width: 14rem;
 }
+
+.button-desktop-footer {
+  width: 40%;
+}
+
+

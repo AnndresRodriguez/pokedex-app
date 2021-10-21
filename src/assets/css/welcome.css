@@ -39,3 +39,25 @@
   text-align: center;
 }
 
+
+
+
+@media(min-width:768px){
+
+  .container-welcome {
+    top: 50%;
+  }
+
+  .container-text, .container-button{
+    margin-top: 3%;
+  }
+
+  .container-text__description{
+    width: 46%;
+    margin: 0 auto;
+    margin-top: 2%;
+  }
+
+
+
+}

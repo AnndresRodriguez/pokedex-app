@@ -1,0 +1,19 @@
+.container-empty-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-empty-list__title{
+    font-size: 3.2rem;
+    color: #353535;
+}
+
+.container-empty-list__text{
+    font-size: 1.7rem;
+    text-align: center;
+    color: #5E5E5E;
+    font-weight: 500;
+
+}

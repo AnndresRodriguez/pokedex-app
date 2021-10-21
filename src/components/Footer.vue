@@ -4,7 +4,7 @@
       <button
         @click="getPokemons(button.text, index)"
         type="button"
-        class="button m-3"
+        class="button-desktop-footer m-3"
         :class="[button.active ? 'bkg-primary' : 'bkg-secondary']"
         v-for="(button, index) in buttons"
         :key="index"
@@ -20,6 +20,7 @@
   </footer>
 </template>
 <script>
+import { mapGetters } from "vuex";
 export default {
   name: "Footer",
   data() {
@@ -57,13 +58,19 @@ export default {
     },
 
     loadPokemons() {
-      this.$store.dispatch("loadCurrentPokemons");
-      this.$store.dispatch("setSectionFavorites", false);
+      if(this.getCurrentPokemons.length > 0){
+        this.$store.dispatch("loadCurrentPokemons");
+        this.$store.dispatch("setSectionFavorites", false);
+      }
+
     },
     loadFavorites() {
       this.$store.dispatch("loadFavorites");
       this.$store.dispatch("setSectionFavorites", true);
     },
+  },
+  computed: {
+    ...mapGetters(["getFavoritePokemons", "getCurrentPokemons"]),
   },
 };
 </script>

@@ -1,0 +1,102 @@
+.container-modal {
+  width: 30rem;
+}
+
+.vm-titlebar {
+  background-image: url("../img/bakground-pokemon-modal.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  position: relative;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.image-modal-pokemon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -130%);
+  width: 60%;
+  height: 17rem;
+  object-fit: cover;
+  object-position: 50% 50%;
+}
+
+.container-info-pokemon {
+  padding-top: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.container-info {
+  font-size: 1.8rem;
+  text-transform: capitalize;
+  color: #5e5e5e;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
+  border-bottom-color: #e8e8e8;
+  padding: 0.7rem;
+}
+
+.container-info-description {
+  font-weight: 600;
+}
+
+.container-info__types {
+  display: flex;
+}
+
+.container-button-share {
+  padding: 5%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button-share {
+  width: 16rem;
+}
+
+.modal-wrapper {
+  display: flex;
+  align-items: center;
+}
+.modal-wrapper .vm {
+  top: auto;
+  border-radius: 1rem;
+}
+
+.vm-btn-close {
+  border: solid 2px white;
+  border-radius: 50%;
+  height: 2.5rem;
+  width: 2.5rem;
+  background: white !important;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vm-btn-close::before {
+  content: "×";
+  font-family: Arial;
+  color: #79c9f9;
+  font-size: 2.7rem;
+  font-weight: bold;
+  margin-top: 0.1rem;
+}
+
+@media (min-width: 320px) {
+  .image-modal-pokemon {
+    width: 50%;
+  }
+}
+
+@media (min-width: 720px) {
+  .image-modal-pokemon {
+    width: 35%;
+  }
+}

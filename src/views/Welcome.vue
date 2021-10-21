@@ -3,7 +3,7 @@
     <div class="">
       <div class="container-image-pokemon">
         <img
-          alt="gif-pikachu"
+          alt="img-pikachu"
           src="@/assets/img/pokemon.png"
           class="image-pokemon"
         />
@@ -12,7 +12,7 @@
 
     <main class="container-text">
       <div class="container-text__title">
-        <h1 class="title">Welcome to Pokédex</h1>
+        <h1 class="title title-desktop">Welcome to Pokédex</h1>
       </div>
       <div class="container-text__description">
         <p class="text text-center">
@@ -23,7 +23,7 @@
     </main>
 
     <div class="container-button">
-        <button type="button" class="button-primary bkg-primary" @click="goToPokedex">Get started</button>
+        <button type="button" class="button button-primary bkg-primary" @click="goToPokedex">Get started</button>
     </div>
   </section>
 </template>

@@ -22,3 +22,28 @@ footer {
 .custom-font-icon{
     font-size: 2rem;
 }
+
+
+@media(min-width:320px) {
+
+  .container-footer-buttons{
+    width: 90%;
+  }
+
+  .button-desktop-footer {
+    width: 70%;
+  }
+  
+}
+
+@media(min-width:768px) {
+
+  .container-footer-buttons{
+    width: 50%;
+  }
+
+  .button-desktop{
+    width: 25rem;
+  }
+  
+}
