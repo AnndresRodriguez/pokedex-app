@@ -9,6 +9,7 @@
         class="form-control"
         placeholder="Search"
         v-model="name"
+        autofocus="autofocus"
       />
     </div>
   </div>

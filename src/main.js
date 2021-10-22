@@ -7,7 +7,6 @@ import store from "./store";
 import "normalize.css";
 import "../src/assets/css/main.css";
 
-import "bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
 
 import Toast from "vue-toastification";
