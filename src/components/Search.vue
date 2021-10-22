@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="left-inner-addon input-container">
+    <div class="left-inner-addon input-container animate__animated animate__fadeInDown">
       <div>
         <i class="fa fa-search fa-2x search-icon" aria-hidden="true"></i>
       </div>

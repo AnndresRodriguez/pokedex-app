@@ -16,6 +16,7 @@
   padding-right: 2rem;
   justify-content: space-between;
   background-color: #fff;
+  cursor: pointer;
 }
 
 .item-pokemon__name,

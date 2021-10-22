@@ -26,5 +26,11 @@ export const getters = {
   },
   getImagePokemon: state => {
     return state.imagePokemon;
+  },
+  getShowModal: state => {
+    return state.showModal;
+  },
+  getPokemonSelected: state => {
+    return state.pokemonSelected;
   }
 };

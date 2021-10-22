@@ -31,4 +31,7 @@ export const actions = {
   setSectionFavorites: ({ commit }, payload) => {
     commit("SET_SECTION_FAVORITES", payload);
   },
+  setSelectedPokemon: ({ commit }, payload) => {
+    commit("SET_SELECTED_POKEMON", payload);
+  },
 };

@@ -89,6 +89,10 @@
   margin-top: 0.1rem;
 }
 
+.vm-btn-close:focus-visible {
+    outline: none;
+}
+
 @media (min-width: 320px) {
   .image-modal-pokemon {
     width: 50%;

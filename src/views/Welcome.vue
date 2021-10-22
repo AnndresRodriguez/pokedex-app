@@ -1,7 +1,7 @@
 <template>
   <section class="container-welcome">
-    <div class="">
-      <div class="container-image-pokemon">
+    <div>
+      <div class="container-image-pokemon animate__animated animate__fadeInDown">
         <img
           alt="img-pikachu"
           src="@/assets/img/pokemon.png"
@@ -10,7 +10,7 @@
       </div>
     </div>
 
-    <main class="container-text">
+    <main class="container-text animate__animated animate__fadeInUp">
       <div class="container-text__title">
         <h1 class="title title-desktop">Welcome to Pokédex</h1>
       </div>
@@ -22,7 +22,7 @@
       </div>
     </main>
 
-    <div class="container-button">
+    <div class="container-button animate__animated animate__fadeInUp animate__delay-2s">
         <button type="button" class="button button-primary bkg-primary" @click="goToPokedex">Get started</button>
     </div>
   </section>

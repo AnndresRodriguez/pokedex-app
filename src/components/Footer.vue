@@ -1,6 +1,6 @@
 <template>
   <footer>
-    <div class="container-footer-buttons">
+    <div class="container-footer-buttons animate__animated animate__slideInUp">
       <button
         @click="getPokemons(button.text, index)"
         type="button"

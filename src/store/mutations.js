@@ -33,7 +33,15 @@ export const mutations = {
   },
   SET_DATA_POKEMON: (state, payload) => {
     state.dataPokemon = payload;
-    state.imagePokemon =
-      payload.sprites.other["official-artwork"].front_default;
+    state.imagePokemon = payload.sprites.other["official-artwork"].front_default;
+    state.showModal = true
+  },
+
+  SET_SHOW_MODAL: (state, payload) => {
+    state.showModal = payload;
+  },
+
+  SET_SELECTED_POKEMON: (state, payload) => {
+    state.pokemonSelected = payload;
   },
 };
