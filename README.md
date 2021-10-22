@@ -43,7 +43,7 @@ Ir a referencia de configuración [Referencia de Configuración](https://cli.vue
 
 * [PokeAPI](https://pokeapi.co/) Api para realizar la pokedex
 
-* [Vue 2](https://vuejs.org/) Framework para la creación del aspecto visual
+* [Vue 2](https://vuejs.org/) Framework para la creación de toda la interacción del usuario en la pokedex
 * [Vue Router](https://router.vuejs.org/) Para la gestión de rutas
 * [Vuex](https://vuex.vuejs.org/) Para la gestión del estado central de la pokedex
 * [Vue Modal](https://github.com/kouts/vue-modal#readme) Para el Modal con la descripción del Pokemón
